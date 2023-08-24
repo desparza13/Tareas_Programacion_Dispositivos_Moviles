@@ -30,9 +30,18 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class McFlutter extends StatelessWidget {
+class McFlutter extends StatefulWidget {
   const McFlutter({super.key});
 
+  @override
+  McFlutterState createState() => McFlutterState();
+}
+
+class McFlutterState extends State<McFlutter> {
+  Color icono1 = Colors.black;
+  Color icono2 = Colors.black;
+  Color icono3 = Colors.black;
+  Color icono4 = Colors.black;
   @override
   Widget build(BuildContext context) {
     //Definimos la clase BirthdayCard de un StatelessWidget (No se mueve)
@@ -41,7 +50,8 @@ class McFlutter extends StatelessWidget {
         appBar: AppBar(
           centerTitle:
               false, //Le decimos que no este centrado ya que el default en iOS es centrado
-          backgroundColor: Colors.blue, //Damos color de fondo aunque podríamos tomarlo del contexto de la app
+          backgroundColor: Colors
+              .blue, //Damos color de fondo aunque podríamos tomarlo del contexto de la app
           title: const Text(
             'Mc Flutter',
             style: TextStyle(color: Colors.white),
@@ -52,39 +62,105 @@ class McFlutter extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.all(10.0),
-              child: const Card(
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.black, width: 1)
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+              child: Card(
+                  elevation: 0,
+                  shape: const RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.black, width: 1)),
+                  child: Column(
                     children: [
-                      Icon(
-                        Icons.account_circle,
-                        size: 50,
+                      const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.account_circle,
+                                size: 50,
+                              ),
+                              Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Flutter McFlutter",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          //fontWeight: FontWeight.bold,
+                                        )),
+                                    Text("Experienced App Developer",
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                        ))
+                                  ])
+                            ]),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              textAlign: TextAlign.start,
+                              "123 Main Street",
+                              style: TextStyle(fontSize: 13),
+                            ),
+                            Text(
+                              textAlign: TextAlign.end,
+                              "(415) 555-0198",
+                              style: TextStyle(fontSize: 13),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Text("Flutter McFlutter",
-                            style: TextStyle(
-                              fontSize: 22,
-                              //fontWeight: FontWeight.bold,
-                            )
-                          ),
-                          Text("Experienced App Developer",
-                            style: TextStyle(
-                              fontSize: 13,
-                            )
-                          )
-                        ]
+                          Expanded(
+                              child: IconButton(
+                                  icon: const Icon(Icons.accessibility),
+                                  color: icono1,
+                                  onPressed: () {
+                                    setState(() {
+                                      icono1 = icono1 == Colors.black
+                                          ? Colors.indigo
+                                          : Colors.black;
+                                    });
+                                  })),
+                          Expanded(
+                              child: IconButton(
+                                  icon: const Icon(Icons.timer),
+                                  color: icono2,
+                                  onPressed: () {
+                                    setState(() {
+                                      icono2 = icono2 == Colors.black
+                                          ? Colors.indigo
+                                          : Colors.black;
+                                    });
+                                  })),
+                          Expanded(
+                              child: IconButton(
+                                  icon: const Icon(Icons.phone_android),
+                                  color: icono3,
+                                  onPressed: () {
+                                    setState(() {
+                                      icono3 = icono3 == Colors.black
+                                          ? Colors.indigo
+                                          : Colors.black;
+                                    });
+                                  })),
+                          Expanded(
+                              child: IconButton(
+                                  icon: const Icon(Icons.phone_iphone),
+                                  color: icono4,
+                                  onPressed: () {
+                                    setState(() {
+                                      icono4 = icono4 == Colors.black
+                                          ? Colors.indigo
+                                          : Colors.black;
+                                    });
+                                  })),
+                        ],
                       )
-                    ]
-                  ),
-                ),
-              ),
+                    ],
+                  )),
             )
           ],
         ));
