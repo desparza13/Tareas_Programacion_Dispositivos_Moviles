@@ -118,6 +118,11 @@ class McFlutterState extends State<McFlutter> {
                                   icon: const Icon(Icons.accessibility),
                                   color: icono1,
                                   onPressed: () {
+                                    const snackBar = SnackBar(
+                                        content: Text(
+                                            'Botón Accesibility (1) presionado!'));
+                                    ScaffoldMessenger.of(context)
+                                        .showSnackBar(snackBar);
                                     setState(() {
                                       icono1 = icono1 == Colors.black
                                           ? Colors.indigo
@@ -129,6 +134,11 @@ class McFlutterState extends State<McFlutter> {
                                   icon: const Icon(Icons.timer),
                                   color: icono2,
                                   onPressed: () {
+                                    const snackBar = SnackBar(
+                                        content: Text(
+                                            'Botón Timer (2) presionado!'));
+                                    ScaffoldMessenger.of(context)
+                                        .showSnackBar(snackBar);
                                     setState(() {
                                       icono2 = icono2 == Colors.black
                                           ? Colors.indigo
@@ -140,6 +150,11 @@ class McFlutterState extends State<McFlutter> {
                                   icon: const Icon(Icons.phone_android),
                                   color: icono3,
                                   onPressed: () {
+                                    const snackBar = SnackBar(
+                                        content: Text(
+                                            'Botón Android (3) presionado!'));
+                                    ScaffoldMessenger.of(context)
+                                        .showSnackBar(snackBar);
                                     setState(() {
                                       icono3 = icono3 == Colors.black
                                           ? Colors.indigo
@@ -151,6 +166,11 @@ class McFlutterState extends State<McFlutter> {
                                   icon: const Icon(Icons.phone_iphone),
                                   color: icono4,
                                   onPressed: () {
+                                    const snackBar = SnackBar(
+                                        content: Text(
+                                            'Botón iPhone (4) presionado!'));
+                                    ScaffoldMessenger.of(context)
+                                        .showSnackBar(snackBar);
                                     setState(() {
                                       icono4 = icono4 == Colors.black
                                           ? Colors.indigo
@@ -163,6 +183,7 @@ class McFlutterState extends State<McFlutter> {
                   )),
             )
           ],
-        ));
+        )
+      );
   }
 }
