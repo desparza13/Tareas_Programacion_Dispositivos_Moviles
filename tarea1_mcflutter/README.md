@@ -1,16 +1,11 @@
-# tarea1_mcflutter
+# Tarea 1: Flutter McFlutter 
 
-A new Flutter project.
+El objetivo del ejercicio siguiente es aprender a utilizar los widgets más comunes.
 
-## Getting Started
+## Video funcional
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/desparza13/Tareas_Programacion_Dispositivos_Moviles/assets/56266109/f821dcbe-392b-4c8f-bb08-49d1133ef835
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cada que se hace clic a un botón este cambia de color entre black e índigo (por ejemplo, si el usuario hace clic en el boton de timer, este se hace de color indigo, y si el usuario hace clic nuevamente el boton regresa a ser color negro).
