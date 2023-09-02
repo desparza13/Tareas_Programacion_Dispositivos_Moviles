@@ -1,16 +1,19 @@
-# tarea2_5_tip
+# Tarea 2.5: Calculator tip
 
-A new Flutter project.
+Se requiere hacer una aplicación con diseño basado en lineamientos de material design, la cual aproveche de manera óptima el espacio en pantalla, además de mostrar al usuario una interfaz con la cual pueda interactuar y navegar dentro de la aplicación.
 
-## Getting Started
+## Mockup
 
-This project is a starting point for a Flutter application.
+Esta app consta de una pantalla con un pequeño formulario en el que el usuario ingresa sus datos con un TextField, Radio Buttons y un Switch para hacer un cálculo de propina.
+App para practicar el uso de widgets:
+- Interacción del usuario 
+- Estados
+- Formateo de strings
+- Text Fields
+- Radio group
+- Primary color
+![Captura de pantalla 2023-09-01 a las 19 29 07](https://github.com/desparza13/Tareas_Programacion_Dispositivos_Moviles/assets/56266109/f29984d6-169b-4b75-be48-9d78d3cf6633)
 
-A few resources to get you started if this is your first Flutter project:
+## Video
+https://github.com/desparza13/Tareas_Programacion_Dispositivos_Moviles/assets/56266109/1c518593-0a44-4f7d-877c-f9b543a34419
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
