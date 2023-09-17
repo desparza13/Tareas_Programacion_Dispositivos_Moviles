@@ -5,7 +5,8 @@ class Pagina3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pagina 3'),
+        title: const Text('Pagina 3'),
+        centerTitle: false,
       ),
       body: Column(
         children: [Row(
