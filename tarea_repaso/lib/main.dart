@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pagina2.dart';
+import 'pagina3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -131,14 +132,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          // TODO: Hacer la pagina 3 de botoncitos
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Pagina3(),
+                          )).then((result) {
+                            if (result != null) {
+                              setState(() {
+                                textoPagina3 = result as String;
+                              });
+                            }
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.zero, 
                           ),
                         ),
-                        child:const Text('Pagina 3'),
+                        child: const Text('Pagina 3'),
                       ),
                     ],
                   ),
