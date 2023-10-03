@@ -23,7 +23,7 @@ Tab 3 Primo:
 Tab 4 Extra:
 •	Esta tab solo, cambia el color Por múltiplos de 10, hasta el 100.  Después se mantiene de un color fijo.
 •	Si hardcodean los colores tienen la mitad de los puntos extra. 
-![image](https://github.com/desparza13/Tareas_Programacion_Dispositivos_Moviles/assets/56266109/808a1df1-2929-483e-ad11-1f93acf212c9)
+
 
 # Video
 https://github.com/desparza13/Tareas_Programacion_Dispositivos_Moviles/assets/56266109/7b7679d2-0ca3-4538-a12d-1af1473575c6
